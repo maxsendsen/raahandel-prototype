@@ -7,6 +7,29 @@
     background-color: #F0EADA ;
 }
 
+.header--logo{
+    width: auto;
+}
+.header--nav{
+    display: inline;
+}
+
+.header--nav li{
+    display: inline;
+}
+
+.markedsplads--kategori ul{
+    display: inline;
+}
+
+.markedsplads--kategori ul li{
+    display: inline;
+}
+
+.markedsplads--filtre{
+text-align: right;
+}
+
 /*switch taget fra w3schools */
 /* The switch - the box around the slider */
 .switch {
@@ -71,3 +94,18 @@
     border-radius: 50%;
   }
   /* switch */
+
+  .markedsplads--produkter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "produkter produkter produkter produkter produkter"
+    ;
+  }
+
+  .markedsplads--chat{
+      position: fixed;
+      bottom: 5%;
+      right: 5%;
+  }
