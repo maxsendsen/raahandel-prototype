@@ -6,6 +6,7 @@
 /*-------------------------------- markedsplads 1 ------------------------------ */
 .header{
     background-color: #F0EADA ;
+    
 }
 
 .header--logo{
@@ -13,10 +14,16 @@
 }
 .header--nav{
     display: inline;
+
 }
 
 .header--nav li{
     display: inline;
+    
+}
+
+.header--nav li a{
+    text-decoration: none;
 }
 
 .markedsplads--kategori ul{
@@ -109,4 +116,35 @@ text-align: right;
       position: fixed;
       bottom: 5%;
       right: 5%;
+  }
+  /* markedsplads SLUT */
+  /* ----------------------------------produkt  info --------------------------------- */
+
+  .produkt_info--container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "uge uge produkt"
+    "beskrivelse beskrivelse produkt"
+    ;
+
+  }
+
+  .produkt_info--uge{
+      grid-area: uge;
+  }
+  .produkt_info--uge ul{
+      display: inline;
+  }
+  .produkt_info--uge ul li{
+      display: inline;
+  }
+
+  .produkt_info--beskrivelse{
+      grid-area: beskrivelse;
+  }
+
+  .produkt_info--produkt{
+      grid-area: produkt;
   }
