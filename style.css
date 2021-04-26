@@ -1,67 +1,76 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     color: #2A2A2A;
 }
 
-body{
-  background-image: url(/assets/Desktop\ -\ 1\ \(1\).png);
-}
-/*-------------------------------- markedsplads 1 ------------------------------ */
-.header{
-    background-color: #F0EADA ;
-    
+body {
+    background-image: url(/assets/Desktop\ -\ 1\ \(1\).png);
 }
 
-.header--logo{
+
+/*-------------------------------- markedsplads 1 ------------------------------ */
+
+.header {
+    background-color: #F0EADA;
+}
+
+.header--logo {
     width: auto;
 }
-.header--nav{
-    display: inline;
 
+.header--nav {
+    display: inline;
 }
 
-.header--nav li{
+.header--nav li {
     display: inline;
-    
 }
 
-.header--nav li a{
+.header--nav li a {
     text-decoration: none;
 }
 
-.markedsplads--kategori ul{
+.markedsplads--kategori ul {
     display: inline;
 }
 
-.markedsplads--kategori ul li{
+.markedsplads--kategori ul li {
     display: inline;
-    background-color: #F9F9F9 ;
+    background-color: #F9F9F9;
 }
 
-.markedsplads--filtre{
-text-align: right;
+.markedsplads--filtre {
+    text-align: right;
 }
+
 
 /*switch taget fra w3schools */
+
+
 /* The switch - the box around the slider */
+
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+
+/* The slider */
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -71,9 +80,9 @@ text-align: right;
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -83,74 +92,132 @@ text-align: right;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-  /* switch */
+}
 
-  .markedsplads--produkter{
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* switch */
+
+.markedsplads--produkter {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "produkter produkter produkter produkter produkter"
-    ;
-  }
+    grid-template-areas: "produkter produkter produkter produkter produkter";
+}
 
-  .markedsplads--chat{
-      position: fixed;
-      bottom: 5%;
-      right: 5%;
-  }
-  /* markedsplads SLUT */
-  /* ----------------------------------produkt  info --------------------------------- */
+.markedsplads--chat {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
 
-  .produkt_info--container{
+
+/* markedsplads SLUT */
+
+
+/* ----------------------------------produkt  info --------------------------------- */
+
+.produkt_info--container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "uge uge produkt"
-    "beskrivelse beskrivelse produkt"
-    ;
+    grid-template-areas: "uge uge produkt" "beskrivelse beskrivelse produkt";
+}
 
-  }
+.produkt_info--uge {
+    grid-area: uge;
+}
 
-  .produkt_info--uge{
-      grid-area: uge;
-  }
-  .produkt_info--uge ul{
-      display: inline;
-  }
-  .produkt_info--uge ul li{
-      display: inline;
-  }
+.produkt_info--uge ul {
+    display: inline;
+}
 
-  .produkt_info--beskrivelse{
-      grid-area: beskrivelse;
-  }
+.produkt_info--uge ul li {
+    display: inline;
+}
 
-  .produkt_info--produkt{
-      grid-area: produkt;
-  }
+.produkt_info--beskrivelse {
+    grid-area: beskrivelse;
+}
+
+.produkt_info--produkt {
+    grid-area: produkt;
+}
+
+
+/* ----------------------------------Chat styling --------------------------------- */
+
+#chat {
+    margin: 0;
+    padding: 0;
+    max-width: 7%;
+    position: absolute;
+    display: flex;
+    left: 90%;
+    top: 85%;
+}
+
+h2 {
+    font-size: small;
+    color: grey;
+    padding: 1em;
+}
+
+.chat-names {
+    display: inline-block;
+    color: grey;
+    border-bottom: solid grey;
+    text-decoration: none;
+    padding-left: 1em;
+    width: 95%;
+}
+
+#close {
+    width: 3em;
+    height: 2em;
+    position: absolute;
+    left: 84%;
+    top: 90%;
+}
+
+#expandedbox {
+    opacity: 0;
+    pointer-events: none;
+    background-color: white;
+    width: 20em;
+    height: 23em;
+    position: absolute;
+    left: 81%;
+    top: 59%;
+    transition: 1s ease-in-out;
+    border-radius: 0.5em;
+}
+
+#expandedbox.active {
+    opacity: 1;
+    pointer-events: all;
+}

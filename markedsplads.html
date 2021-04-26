@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Markedsplads</title>
 </head>
+
 <body>
     <header class="header">
         <img src="/assets/raahandel-logo.png" alt="logo" class="header--logo">
 
         <ul class="header--nav">
-            <li><a href=""><img src="/assets/notif.svg" alt="notifikation"></a></li>
-            <li><a href="">Varer</a></li>
-            <li><a href="">Opret bruger</a></li>
-            <li><a href="">Leveringsdag</a></li>
-            <li><a href="">Kurv</a></li>
+            <li>
+                <a href="#"><img src="/assets/notif.svg" alt="notifikation"></a>
+            </li>
+            <li><a href="#">Varer</a></li>
+            <li><a href="#">Opret bruger</a></li>
+            <li><a href="#">Leveringsdag</a></li>
+            <li><a href="#">Kurv</a></li>
         </ul>
 
     </header>
@@ -26,28 +30,40 @@
         <div class="markedsplads--kategori">
             <h1 class="overskrifter">Kategori</h1>
             <ul>
-                <li><a href=""><img src="/assets/notif.svg" alt="Frugt & Grønt">Frugt & Grønt</a></li>
-                <li><a href=""><img src="/assets/notif.svg" alt="Kød">Kød</a></li>
-                <li><a href=""><img src="/assets/notif.svg" alt="Æg & Mejeri">Æg & Mejeri</a></li>
-                <li><a href=""><img src="/assets/notif.svg" alt="Brød & Bageri">Brød & Bageri</a></li>
-                <li><a href=""><img src="/assets/notif.svg" alt="Drikkevarer">Drikkevarer</a></li>
-                <li><a href=""><img src="/assets/notif.svg" alt="Diverse">Diverse</a></li>
+                <li>
+                    <a href=""><img src="/assets/notif.svg" alt="Frugt & Grønt">Frugt & Grønt</a>
+                </li>
+                <li>
+                    <a href=""><img src="/assets/notif.svg" alt="Kød">Kød</a>
+                </li>
+                <li>
+                    <a href=""><img src="/assets/notif.svg" alt="Æg & Mejeri">Æg & Mejeri</a>
+                </li>
+                <li>
+                    <a href=""><img src="/assets/notif.svg" alt="Brød & Bageri">Brød & Bageri</a>
+                </li>
+                <li>
+                    <a href=""><img src="/assets/notif.svg" alt="Drikkevarer">Drikkevarer</a>
+                </li>
+                <li>
+                    <a href=""><img src="/assets/notif.svg" alt="Diverse">Diverse</a>
+                </li>
             </ul>
         </div>
-       
+
         <div class="markedsplads--filtre">
             <h1 class="overskrifter">Filtrering</h1>
-           <!-- taget fra w3schools -->
+            <!-- taget fra w3schools -->
             <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
               </label>
-              <p class="switch--tekst">vis kun vare på tilbud</p>
-              <label class="switch">
+            <p class="switch--tekst">vis kun vare på tilbud</p>
+            <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
               </label>
-              <p class="switch--tekst">skjul udsolgte vare</p>
+            <p class="switch--tekst">skjul udsolgte vare</p>
         </div>
     </section>
 
@@ -67,13 +83,25 @@
             <li>Produkter</li>
             <li>Produkter</li>
             <li>Produkter</li>
-            
+
         </ul>
 
-        <button class="markedsplads--chat">chat med producenter</button>
+
+        <img src="/assets/chat.svg" id="chat" alt="chat-logo">
+        <section id="expandedbox">
+            <h2>Chat med vores producenter</h2>
+            <a href="#" class="chat-names">Raahandel</a>
+            <a href="#" class="chat-names">Snoremark</a>
+            <a href="#" class="chat-names">Tealisious</a>
+            <a href="#" class="chat-names">Himmelskyr</a>
+            <button id="close">close</button>
+        </section>
+
 
     </section>
+    <script src="/anime-master/src/index.js"></script>
 
-
+    <script src="main.js"></script>
 </body>
+
 </html>
