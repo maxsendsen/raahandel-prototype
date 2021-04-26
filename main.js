@@ -1,10 +1,18 @@
+window.onload = () => {
+    const trasition_el = document.querySelector('.transition');
+    setTimeout(() => {
+        trasition_el.classList.remove('is-active');
+
+    }, 500);
+};
+
 document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener('click', function(event) {
 
-        // If the clicked element doesn't have the right selector, bail
+
         if (!event.target.matches('#chat')) return;
 
-        // Don't follow the link
+
         event.preventDefault();
 
 
@@ -14,10 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.addEventListener('click', function(event) {
 
-        // If the clicked element doesn't have the right selector, bail
+
         if (!event.target.matches('#close')) return;
 
-        // Don't follow the link
+
         event.preventDefault();
 
 

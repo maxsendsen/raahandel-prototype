@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transitions.css">
     <title>Markedsplads</title>
 </head>
 
@@ -13,11 +14,11 @@
     <header class="header">
         <img src="/assets/raahandel-logo.png" alt="logo" class="header--logo">
 
+
         <ul class="header--nav">
             <li>
                 <a href="#"><img src="/assets/notif.svg" alt="notifikation"></a>
             </li>
-            <li><a href="#">Varer</a></li>
             <li><a href="#">Opret bruger</a></li>
             <li><a href="#">Leveringsdag</a></li>
             <li><a href="#">Kurv</a></li>
@@ -31,23 +32,15 @@
             <h1 class="overskrifter">Kategori</h1>
             <ul>
                 <li>
-                    <a href=""><img src="/assets/Tegnebræt 2.png" alt="Frugt & Grønt" width="90">Frugt & Grønt</a>
+                    <a href=""><img src="/assets/notif.svg" alt="Frugt & Grønt">Frugt & Grønt</a>
                 </li>
                 <li>
-                    <a href=""><img src="/assets/Tegnebræt 3.png" alt="Kød" width="90">Kød</a>
+                    <a href=""><img src="/assets/notif.svg" alt="Kød">Kød</a>
                 </li>
-                <li>
-                    <a href=""><img src="/assets/placeholder.png" alt="Æg & Mejeri" width="90">Æg & Mejeri</a>
-                </li>
-                <li>
-                    <a href=""><img src="/assets/Tegnebræt 5.png" alt="Brød & Bageri" width="90">Brød & Bageri</a>
-                </li>
-                <li>
-                    <a href=""><img src="/assets/Tegnebræt 4.png" alt="Drikkevarer" width="90">Drikkevarer</a>
-                </li>
-                <li>
-                    <a href=""><img src="/assets/placeholder.png" alt="Diverse" width="90">Diverse</a>
-                </li>
+                <li><img src="/assets/notif.svg" alt="Æg & Mejeri"><a href="">Æg & Mejeri</a></li>
+                <li><img src="/assets/notif.svg" alt="Brød & Bageri"><a href="">Brød & Bageri</a></li>
+                <li><img src="/assets/notif.svg" alt="Drikkevarer"><a href="">Drikkevarer</a></li>
+                <li><img src="/assets/notif.svg" alt="Diverse"><a href="">Diverse</a></li>
             </ul>
         </div>
 
@@ -73,33 +66,71 @@
         <input type="text" placeholder="søg">
 
         <ul class="markedsplads--produkter">
-            <li>Produkter</li>
-            <li>Produkter</li>
-            <li>Produkter</li>
-            <li>Produkter</li>
-            <li>Produkter</li>
-            <li>Produkter</li>
-            <li>Produkter</li>
-            <li>Produkter</li>
-            <li>Produkter</li>
-            <li>Produkter</li>
+            <li>
+                <h4>producent</h4><img src="/assets/placeholder.png" alt="produktbillede">
+                <h2>produktnavn</h2>
+                <p>ekstra info</p>
+                <h1>pris</h1><button>køb</button></li>
+            <li>
+                <h4>producent</h4><img src="/assets/placeholder.png" alt="produktbillede">
+                <h2>produktnavn</h2>
+                <p>ekstra info</p>
+                <h1>pris</h1><button>køb</button></li>
+            <li>
+                <h4>producent</h4><img src="/assets/placeholder.png" alt="produktbillede">
+                <h2>produktnavn</h2>
+                <p>ekstra info</p>
+                <h1>pris</h1><button>køb</button></li>
+            <li>
+                <h4>producent</h4><img src="/assets/placeholder.png" alt="produktbillede">
+                <h2>produktnavn</h2>
+                <p>ekstra info</p>
+                <h1>pris</h1><button>køb</button></li>
+            <li>
+                <h4>producent</h4><img src="/assets/placeholder.png" alt="produktbillede">
+                <h2>produktnavn</h2>
+                <p>ekstra info</p>
+                <h1>pris</h1><button>køb</button></li>
+            <li>
+                <h4>producent</h4><img src="/assets/placeholder.png" alt="produktbillede">
+                <h2>produktnavn</h2>
+                <p>ekstra info</p>
+                <h1>pris</h1><button>køb</button></li>
+            <li>
+                <h4>producent</h4><img src="/assets/placeholder.png" alt="produktbillede">
+                <h2>produktnavn</h2>
+                <p>ekstra info</p>
+                <h1>pris</h1><button>køb</button></li>
+            <li>
+                <h4>producent</h4><img src="/assets/placeholder.png" alt="produktbillede">
+                <h2>produktnavn</h2>
+                <p>ekstra info</p>
+                <h1>pris</h1><button>køb</button></li>
+            <li>
+                <h4>producent</h4><img src="/assets/placeholder.png" alt="produktbillede">
+                <h2>produktnavn</h2>
+                <p>ekstra info</p>
+                <h1>pris</h1><button>køb</button></li>
+            <li>
+                <h4>producent</h4><img src="/assets/placeholder.png" alt="produktbillede">
+                <h2>produktnavn</h2>
+                <p>ekstra info</p>
+                <h1>pris</h1><button>køb</button></li>
 
         </ul>
 
-
+        <div class="transition transition-1 is-active"></div>
         <img src="/assets/chat.svg" id="chat" alt="chat-logo">
         <section id="expandedbox">
             <h2>Chat med vores producenter</h2>
-            <a href="#" class="chat-names">Raahandel</a>
-            <a href="#" class="chat-names">Snoremark</a>
-            <a href="#" class="chat-names">Tealisious</a>
-            <a href="#" class="chat-names">Himmelskyr</a>
+            <a href="chat-page.html" class="chat-names">Kundeservice</a>
+            <a href="chat-page.html" class="chat-names">Snoremark</a>
+            <a href="chat-page.html" class="chat-names">Tealisious</a>
+            <a href="chat-page.html" class="chat-names">Himmelskyr</a>
             <button id="close">close</button>
         </section>
 
-
     </section>
-    <script src="/anime-master/src/index.js"></script>
 
     <script src="main.js"></script>
 </body>

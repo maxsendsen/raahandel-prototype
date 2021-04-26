@@ -14,22 +14,41 @@ body {
 
 .header {
     background-color: #F0EADA;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "logo nav";
 }
 
 .header--logo {
+    grid-area: logo;
     width: auto;
 }
 
 .header--nav {
+    grid-area: nav;
+    text-align: end;
     display: inline;
 }
 
 .header--nav li {
+    margin-right: 1rem;
     display: inline;
 }
 
 .header--nav li a {
     text-decoration: none;
+}
+
+.markedsplads--top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "kategori filtre";
+}
+
+.markedsplads--kategori {
+    grid-area: kategori;
 }
 
 .markedsplads--kategori ul {
@@ -42,7 +61,8 @@ body {
 }
 
 .markedsplads--filtre {
-    text-align: right;
+    grid-area: filtre;
+    margin-left: 5rem;
 }
 
 
@@ -129,10 +149,34 @@ input:checked+.slider:before {
     grid-template-areas: "produkter produkter produkter produkter produkter";
 }
 
+.markedsplads--produkter li {
+    background-color: #F9F9F9;
+    margin: 10%;
+    list-style: none;
+}
+
+.markedsplads--produkter li h4 {
+    color: #16639F;
+}
+
+.markedsplads--produkter li img {
+    width: 15rem;
+}
+
+.markedsplads--produkter li button {
+    background-color: #16639F;
+    color: #F9F9F9;
+    font-size: 2rem;
+}
+
 .markedsplads--chat {
     position: fixed;
     bottom: 5%;
     right: 5%;
+    font-size: 1rem;
+    background-color: #68C2E1;
+    color: #F9F9F9;
+    padding: 0.5rem;
 }
 
 
@@ -166,6 +210,13 @@ input:checked+.slider:before {
 
 .produkt_info--produkt {
     grid-area: produkt;
+    background-color: #F9F9F9;
+}
+
+.produkt_info--produkt button {
+    background-color: #16639F;
+    color: #F9F9F9;
+    font-size: 2rem;
 }
 
 
@@ -175,14 +226,14 @@ input:checked+.slider:before {
     margin: 0;
     padding: 0;
     max-width: 7%;
-    position: absolute;
+    position: fixed;
     display: flex;
     left: 90%;
     top: 85%;
 }
 
 h2 {
-    font-size: small;
+    font-size: medium;
     color: grey;
     padding: 1em;
 }
@@ -192,6 +243,8 @@ h2 {
     color: grey;
     border-bottom: solid grey;
     text-decoration: none;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
     padding-left: 1em;
     width: 95%;
 }
@@ -199,9 +252,9 @@ h2 {
 #close {
     width: 3em;
     height: 2em;
-    position: absolute;
-    left: 84%;
-    top: 90%;
+    position: fixed;
+    left: 82%;
+    top: 92%;
 }
 
 #expandedbox {
@@ -210,7 +263,7 @@ h2 {
     background-color: white;
     width: 20em;
     height: 23em;
-    position: absolute;
+    position: fixed;
     left: 81%;
     top: 59%;
     transition: 1s ease-in-out;
