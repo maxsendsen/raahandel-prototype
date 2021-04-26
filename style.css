@@ -11,18 +11,29 @@ body{
 /*-------------------------------- markedsplads 1 ------------------------------ */
 .header{
     background-color: #F0EADA ;
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "logo nav"
+  ;
 }
 
 .header--logo{
+  grid-area: logo;
     width: auto;
 }
-.header--nav{
-    display: inline;
 
+
+.header--nav{
+  grid-area: nav;
+  text-align: end;
+    display: inline;
+  
 }
 
 .header--nav li{
+  margin-right: 1rem;
     display: inline;
     
 }
@@ -31,6 +42,17 @@ body{
     text-decoration: none;
 }
 
+.markedsplads--top{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "kategori filtre"
+  ;
+}
+.markedsplads--kategori{
+  grid-area: kategori;
+}
 .markedsplads--kategori ul{
     display: inline;
 }
@@ -41,7 +63,8 @@ body{
 }
 
 .markedsplads--filtre{
-text-align: right;
+  grid-area: filtre;
+  margin-left: 5rem;
 }
 
 /*switch taget fra w3schools */
@@ -117,11 +140,32 @@ text-align: right;
     "produkter produkter produkter produkter produkter"
     ;
   }
+  .markedsplads--produkter li{
+    background-color: #F9F9F9;
+    margin: 10%;
+    list-style: none;
+  }
+  .markedsplads--produkter li h4{
+    color:#16639F ;
+  }
+  .markedsplads--produkter li img{
+    width: 15rem;
+  }
+  .markedsplads--produkter li button{
+    background-color: #16639F;
+    color:#F9F9F9 ;
+    font-size: 2rem;
+    
+  }
 
   .markedsplads--chat{
       position: fixed;
       bottom: 5%;
       right: 5%;
+    font-size: 1rem;
+    background-color:#68C2E1 ;
+    color: #F9F9F9;
+    padding: 0.5rem;
   }
   /* markedsplads SLUT */
   /* ----------------------------------produkt  info --------------------------------- */
