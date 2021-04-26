@@ -1,11 +1,3 @@
-window.onload = () => {
-    const trasition_el = document.querySelector('.transition');
-    setTimeout(() => {
-        trasition_el.classList.remove('is-active');
-
-    }, 500);
-};
-
 document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener('click', function(event) {
 
