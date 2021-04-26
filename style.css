@@ -4,6 +4,10 @@
     font-family: sans-serif;
     color: #2A2A2A;
 }
+
+body{
+  background-image: url(/assets/Desktop\ -\ 1\ \(1\).png);
+}
 /*-------------------------------- markedsplads 1 ------------------------------ */
 .header{
     background-color: #F0EADA ;
@@ -33,6 +37,7 @@
 
 .markedsplads--kategori ul li{
     display: inline;
+    background-color: #F9F9F9 ;
 }
 
 .markedsplads--filtre{
