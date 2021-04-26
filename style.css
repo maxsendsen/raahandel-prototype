@@ -197,4 +197,10 @@ body{
 
   .produkt_info--produkt{
       grid-area: produkt;
+      background-color: #F9F9F9;
+  }
+  .produkt_info--produkt button{
+    background-color: #16639F;
+    color:#F9F9F9 ;
+    font-size: 2rem;
   }
